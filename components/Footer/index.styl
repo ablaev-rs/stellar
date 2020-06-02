@@ -1,0 +1,119 @@
+// 1u is a 8px grid unit. 1u === 8px
+
+.root
+  align-items flex-start
+
+.container 
+  padding 4u 3u 0u 3u
+  flex-direction column
+  width 100%
+  text-align left 
+  align-items center
+  +tablet()
+    justify-content space-between
+    flex-direction row-reverse
+
+.h2
+  font-size 22px
+  color #fff
+  font-weight 300
+  margin-top 3u
+  +tablet()
+    font-size 36px
+
+.text
+  color #fff
+  font-size 14px
+  line-height 24px
+  font-weight 300
+  margin-top 3u
+  +tablet()
+    color #636363
+    font-size 2u
+    line-height 4u
+    font-weight 300
+
+.infoBox
+  +tablet()
+    flex 1
+
+.btn
+  width 100%
+  margin-top 2u
+
+.btnText
+  color #636363
+  font-size 14px
+  line-height 3u
+  font-weight 300
+  padding 1u 5u
+  border solid 1px #ddd
+  border-radius 1u
+  text-align center
+  +tablet()
+    font-size 2u
+    padding 1u 5u
+
+.btnPink
+  margin-top 2u
+  color #fff
+  background #7b5b91
+
+.contactData
+  margin-top 3u
+  flex-direction row
+  align-items flex-start
+  flex-direction row
+
+.header,
+.value
+  color #fff
+  font-size 14px
+  align-items flex-start
+
+.header
+  font-weight bold
+  flex 1
+  width 7u
+  line-height 3u
+  
+
+.value
+  margin-left 4u
+  line-height 3u
+  
+.copyright
+  margin-top 4u
+  margin-bottom 10u
+  width 100%
+  .text
+    color #ffffff
+    font-size 12px
+    text-align left
+
+.social
+  flex-direction row
+  margin-top 6u
+  width 100%
+  text-align left 
+
+.imageBorder
+  align-items center
+  justify-content center
+  border solid 1px #ddd
+  width 5u
+  height 5u
+  border-radius 50%
+  margin-left 2u
+  &.first
+    margin-left 0u
+
+.image
+  width 3u
+  height 3u
+  border-radius 50%
+  +tablet()
+    width 36u
+    height 36u
+
+

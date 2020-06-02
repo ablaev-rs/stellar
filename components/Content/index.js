@@ -1,16 +1,23 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { Text } from 'react-native'
-import { Div } from '@startupjs/ui'
+import { Text, View } from 'react-native'
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 import Navigation from './Navigation'
+import Introduction from './Introduction'
+import First from './First'
+import Second from './Second'
+import GetStarted from './GetStarted'
 
-export default observer(function Header () {
+export default observer(function Content () {
   return pug`
-    Div.root
-      Div.container
+    View.root
+      View.container
         Navigation
+        Introduction
+        First
+        Second
+        GetStarted
 
   `
 })

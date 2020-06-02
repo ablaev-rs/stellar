@@ -4,20 +4,34 @@
   align-items center
 
 .container 
-  padding 16u 11u 9u 11u
+  padding 7u 1u 0u 1u
   align-items center
+  +tablet()
+    padding 16u 11u 9u 11u
 
 .image
   width 11u
   height 11u
   
-.header
+.h1
   color #ffffff
-  font-size 6u
-  font-weight normal
-  margin-top 2u
+  font-size 4u
+  font-weight 300
+  margin-top 4u
+  +tablet()
+    margin-top 2u
+    font-size 6u
+
+.sloganBox
+  margin-top 1u
+  text-align center
 
 .slogan
-  font-size 2u
-  margin-top 2u
+  font-size 14px
+  margin-top 1u
   color #ccc
+  font-weight 300
+  +tablet()
+    font-size 2u
+    margin-top 2u
+    font-size 2u

@@ -1,0 +1,85 @@
+// 1u is a 8px grid unit. 1u === 8px
+
+.root
+  align-items flex-start
+
+.container 
+  padding 7u 3u 6u 3u
+  flex-direction column
+  width 100%
+  align-items center
+  border-bottom solid 1px #ddd
+  text-align center
+  +tablet()
+    justify-content space-between
+    flex-direction row-reverse
+
+
+.h2
+  font-size 22
+  color #636363
+  font-weight 300
+  margin-top 3u
+  +tablet()
+    font-size 36px
+
+.sep
+  width 12u
+  margin 2u 0u 4u 0u
+  border solid 1px #dddddd
+  +tablet()
+    width 17u
+
+.text
+  color #636363
+  font-size 14px
+  line-height 30px
+  font-weight 300
+  +tablet()
+    color #636363
+    font-size 2u
+    line-height 4u
+    font-weight 300
+  
+.infoBox
+  align-items center
+  +tablet()
+    flex 1
+
+.imageBox
+  +tablet()
+    margin-left 0u
+
+
+.imageBorder
+  align-items center
+  justify-content center
+  border solid 1px #ddd
+  width 27u
+  height 27u
+  border-radius 50%
+
+.image
+  width 25u
+  height 25u
+  border-radius 50%
+  border solid 1px #ddd
+  +tablet()
+    width 36u
+    height 36u
+
+.btn
+  margin-top 4u
+  width 100%
+
+.btnText
+  color #636363
+  font-size 14px
+  line-height 3u
+  font-weight 300
+  padding 1u 5u
+  border solid 1px #ddd
+  border-radius 1u
+  +tablet()
+    font-size 2u
+    padding 1u 5u

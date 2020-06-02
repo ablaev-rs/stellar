@@ -1,14 +1,13 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { Text } from 'react-native'
-import { Div, Menu } from '@startupjs/ui'
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
+import { Text, View } from 'react-native'
+import { Menu } from '@startupjs/ui'
 
 export default observer(function Header () {
   const navigation = ['Introduction', 'First Section', 'Second Section', 'Get Started']
   return pug`
-    Div.root
+    View.root
       Menu.nav(variant='horizontal')
         each val in navigation
           Menu.item= val
