@@ -4,10 +4,10 @@
   align-items center
 
 .container 
-  padding 7u 1u 0u 1u
+  padding 8u 1u 0u 1u
   align-items center
   +tablet()
-    padding 16u 11u 9u 11u
+    padding 13u 11u 9u 11u
 
 .image
   width 11u
@@ -19,19 +19,29 @@
   font-weight 300
   margin-top 4u
   +tablet()
-    margin-top 2u
+    margin-top 3u
     font-size 6u
 
 .sloganBox
-  margin-top 1u
-  text-align center
+  margin-top 2u
+
+.sloganRow
+  flex-direction row
+  justify-content center
+  +tablet()
+    margin-top 2u
 
 .slogan
   font-size 14px
-  margin-top 1u
+  line-height: 3u
+  margin-top 0u
   color #ccc
   font-weight 300
   +tablet()
     font-size 2u
-    margin-top 2u
-    font-size 2u
+
+
+.link
+  text-decoration underline
+  text-decoration-color #ccc
+  text-decoration-style dotted

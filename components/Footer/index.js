@@ -1,7 +1,7 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { View, TouchableOpacity, Text, Image } from 'react-native'
+import { View, TouchableOpacity, Text, Image, Linking } from 'react-native'
 import { BASE_URL } from '@env'
 
 export default observer(function Header () {
@@ -34,18 +34,21 @@ export default observer(function Header () {
               Text.value (000) 000-0000 x 0000
             View.contactData 
               Text.header Email
-              Text.value information@untitled.tld
+              Text(onPress=() => Linking.openURL('#')).value.link information@untitled.tld
 
         View.social
-          each url in icons
-            View.imageBorder
+          each url, index in icons
+            View.imageBorder(styleName=index === 0 ? 'first' : '')
               Image.image(
                 source={uri: base + url}
               )
 
 
         View.copyright
-          Text.text © Untitled. Design: HTML5 UP.
+          Text.text © Untitled. Design: 
+          Text(onPress=() => Linking.openURL('#')).text.link HTML5 UP 
+          Text.text Demo Images: 
+          Text(onPress=() => Linking.openURL('#')).text.link Unsplash.
 
   `
 })
