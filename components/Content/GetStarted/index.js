@@ -14,11 +14,11 @@ export default observer(function GetStarted () {
           Hr.sep
           Text.text Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
 
-        TouchableOpacity.btn
-          Text.btnText.btnBlue Get Started
-
-        TouchableOpacity.btn
-          Text.btnText Learn More
+        View.groupBtn
+          TouchableOpacity.btn
+            Text.btnText.btnBlue Get Started
+          TouchableOpacity.btn
+            Text.btnText Learn More
 
   `
 })

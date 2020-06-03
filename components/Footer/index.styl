@@ -8,10 +8,7 @@
   flex-direction column
   width 100%
   text-align left 
-  align-items center
-  +tablet()
-    justify-content space-between
-    flex-direction row-reverse
+
 
 .h2
   font-size 22px
@@ -19,7 +16,7 @@
   font-weight 300
   margin-top 3u
   +tablet()
-    font-size 36px
+    font-size 22px
 
 .text
   color #fff
@@ -27,19 +24,12 @@
   line-height 24px
   font-weight 300
   margin-top 3u
-  +tablet()
-    color #636363
-    font-size 2u
-    line-height 4u
-    font-weight 300
-
-.infoBox
-  +tablet()
-    flex 1
 
 .btn
   width 100%
   margin-top 2u
+  +tablet()
+    width 20u
 
 .btnText
   color #636363
@@ -51,7 +41,7 @@
   border-radius 1u
   text-align center
   +tablet()
-    font-size 2u
+    font-size 14px
     padding 1u 5u
 
 .btnPink
@@ -59,11 +49,16 @@
   color #fff
   background #7b5b91
 
+.contact
+  align-items flex-start
+  +tablet()
+    margin 0px
+
 .contactData
   margin-top 3u
   flex-direction row
   align-items flex-start
-  flex-direction row
+
 
 .header,
 .value
@@ -81,6 +76,7 @@
 .value
   margin-left 4u
   line-height 3u
+  text-align left
   
 .copyright
   margin-top 4u
@@ -114,8 +110,8 @@
   height 3u
   border-radius 50%
   +tablet()
-    width 36u
-    height 36u
+    width 3u
+    height 3u
 
 .link
   text-decoration underline

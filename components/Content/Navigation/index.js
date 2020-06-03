@@ -1,7 +1,7 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 import { Menu } from '@startupjs/ui'
 
 export default observer(function Header () {

@@ -4,31 +4,39 @@
   align-items flex-start
 
 .container 
-  padding 7u 3u 6u 3u
+  padding 7u 3u 8u 3u
   flex-direction column
   width 100%
   align-items center
   border-bottom solid 1px #ddd
   text-align center
   +tablet()
+    padding 8u 8u 10u 8u
+  +desktop()
     justify-content space-between
     flex-direction row-reverse
-
+    padding 6u 8u 8u 8u
 
 .h2
-  font-size 22
+  font-size 22px
   color #636363
   font-weight 300
   margin-top 3u
   +tablet()
-    font-size 36px
+    font-size 28px
+    margin-top 4u
+  +desktop()
+    font-size 28px
 
 .sep
   width 12u
   margin 2u 0u 4u 0u
   border solid 1px #dddddd
   +tablet()
-    width 17u
+    margin 4u 0u 4u 0u
+  +desktop()
+    margin 4u 0u 4u 0u
+    width 13u
 
 .text
   color #636363
@@ -36,19 +44,20 @@
   line-height 30px
   font-weight 300
   +tablet()
-    color #636363
-    font-size 2u
-    line-height 4u
-    font-weight 300
+    line-height 26px
+  +desktop()
+    line-height 26px
+    text-align left
   
 .infoBox
   align-items center
-  +tablet()
+  +desktop()
+    align-items flex-start
     flex 1
 
 .imageBox
-  +tablet()
-    margin-left 0u
+  +desktop()
+    margin-left 8u
 
 
 .imageBorder
@@ -58,6 +67,9 @@
   width 27u
   height 27u
   border-radius 50%
+  +tablet()
+    width 35u
+    height 35u
 
 .image
   width 25u
@@ -65,12 +77,14 @@
   border-radius 50%
   border solid 1px #ddd
   +tablet()
-    width 36u
-    height 36u
+    width 32u
+    height 32u
 
 .btn
   margin-top 4u
   width 100%
+  +tablet()
+    width 20u
 
 .btnText
   color #636363
@@ -81,5 +95,5 @@
   border solid 1px #ddd
   border-radius 1u
   +tablet()
-    font-size 2u
+    font-size 14px
     padding 1u 5u

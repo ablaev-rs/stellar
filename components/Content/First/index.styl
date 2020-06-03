@@ -1,7 +1,5 @@
 // 1u is a 8px grid unit. 1u === 8px
 
-// 1u is a 8px grid unit. 1u === 8px
-
 .root
   align-items flex-start
 
@@ -13,17 +11,21 @@
   border-bottom solid 1px #ddd
   text-align center
   +tablet()
+    padding 5u 3u 8u 3u
+  +desktop()
     justify-content space-between
-    flex-direction row-reverse
-
+    flex-direction row
 
 .h2
-  font-size 22
+  font-size 22px
   color #636363
   font-weight 300
   margin-top 3u
   +tablet()
-    font-size 36px
+    font-size 28px
+    margin-top 3u
+  +desktop()
+    font-size 28px
 
 .h3
   font-size 18px
@@ -31,13 +33,16 @@
   font-weight 300
   margin-top 3u
   +tablet()
-    font-size 36px
+    font-size 18px
+    margin-top 4u
 
 .sep
   width 12u
   margin-top 2u
   border solid 1px #dddddd
   +tablet()
+    margin 4u 0u 4u 0u
+  +desktop()
     width 17u
 
 .text
@@ -48,8 +53,20 @@
   +tablet()
     color #636363
     font-size 2u
-    line-height 4u
+    line-height 3u
     font-weight 300
+
+.items
+  +tablet()
+    margin-top 14u
+    justify-content space-between
+    flex-direction row
+    flex-wrap wrap
+    justify-content center
+
+.item
+  +tablet()
+    width 38u
 
 .textBox
   margin-top 2u
@@ -72,6 +89,9 @@
   width 17u
   height 17u
   border-radius 50%
+  +tablet()
+    width 23u
+    height 23u
 
 .image
   width 15u
@@ -79,12 +99,17 @@
   border-radius 50%
   border solid 1px #ddd
   +tablet()
+    width 20u
+    height 20u
+  +desktop()
     width 36u
     height 36u
 
 .btn
   margin-top 4u
   width 100%
+  +tablet()
+    width 20u
 
 .btnText
   color #636363
@@ -95,5 +120,5 @@
   border solid 1px #ddd
   border-radius 1u
   +tablet()
-    font-size 2u
+    font-size 14px
     padding 1u 5u

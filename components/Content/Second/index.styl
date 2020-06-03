@@ -1,7 +1,5 @@
 // 1u is a 8px grid unit. 1u === 8px
 
-// 1u is a 8px grid unit. 1u === 8px
-
 .root
   align-items flex-start
 
@@ -13,12 +11,10 @@
   border-bottom solid 1px #ddd
   text-align center
   +tablet()
-    justify-content space-between
-    flex-direction row-reverse
-
+    padding 5u 4u 6u 4u
 
 .h2
-  font-size 22
+  font-size 22px
   color #636363
   font-weight 300
   margin-top 3u
@@ -40,7 +36,7 @@
   +tablet()
     color #636363
     font-size 2u
-    line-height 4u
+    line-height 3u
     font-weight 300
 
 .justify
@@ -60,36 +56,28 @@
   width 8u
   height 8u
   +tablet()
-    width 36u
-    height 36u
+    width 5u
+    height 5u
 
-.btn
-  margin-top 4u
-  width 100%
-
-.btnText
-  color #636363
-  font-size 14px
-  line-height 3u
-  font-weight 300
-  padding 1u 5u
-  border solid 1px #ddd
-  border-radius 1u
-  +tablet()
-    font-size 2u
-    padding 1u 5u
-
-.stats
+.items
   width 90%
   margin 4u 0u
+  +tablet()
+    margin-top 26u
+    flex-direction row
+    flex-wrap nowrap
+    justify-content center
 
-.stat
+.item
   padding 4u
+  
 
 .count
   font-size 4u
   color #fff
   margin-top 1u
+  +tablet()
+    font-size 3u
 
 .explanation
   margin-top 1u
@@ -100,6 +88,10 @@
   background #EFA8B0
   border-top-left-radius 1u
   border-top-right-radius 1u
+  +tablet()
+    border-top-left-radius 1u
+    border-top-right-radius 0u
+    border-bottom-left-radius 1u
 
 .magna
   background #C79CC8
@@ -114,3 +106,25 @@
   background #8CC9F0
   border-bottom-left-radius 1u
   border-bottom-right-radius 1u
+  +tablet()
+    border-bottom-left-radius 0u
+    border-bottom-right-radius 1u
+    border-top-right-radius 1u
+
+.btn
+  margin-top 4u
+  width 100%
+  +tablet()
+    width 20u
+
+.btnText
+  color #636363
+  font-size 14px
+  line-height 3u
+  font-weight 300
+  padding 1u 5u
+  border solid 1px #ddd
+  border-radius 1u
+  +tablet()
+    font-size 14px
+    padding 1u 5u

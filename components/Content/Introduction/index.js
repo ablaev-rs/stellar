@@ -2,7 +2,7 @@ import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
 import { Image, Text, View, TouchableOpacity } from 'react-native'
-import { H2, Hr } from '@startupjs/ui'
+import { Hr } from '@startupjs/ui'
 import { BASE_URL } from '@env'
 
 export default observer(function Header () {

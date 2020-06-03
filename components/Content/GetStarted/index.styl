@@ -1,18 +1,12 @@
 // 1u is a 8px grid unit. 1u === 8px
 
-.root
-  align-items flex-start
-
 .container 
-  padding 5u 3u 0u 3u
-  flex-direction column
+  padding 3u 3u 0u 3u
   width 100%
-  align-items center
   text-align center
-  +tablet()
-    justify-content space-between
-    flex-direction row-reverse
 
+.infoBox
+  align-items center
 
 .h2
   font-size 22
@@ -40,28 +34,29 @@
     line-height 4u
     font-weight 300
 
-.infoBox
-  align-items center
+.groupBtn
+  width 100%
+  margin-top 4u
   +tablet()
-    flex 1
+    flex-direction row
+    justify-content center
 
 .btn
   width 100%
-  margin-top 2u
+  +tablet()
+    width 22u
 
 .btnText
   color #636363
   font-size 14px
   line-height 3u
   font-weight 300
-  padding 1u 5u
+  padding 1u 0u
   border solid 1px #ddd
   border-radius 1u
-  +tablet()
-    font-size 2u
-    padding 1u 5u
 
 .btnBlue
-  margin-top 2u
   color #fff
   background #9acff2
+  +tablet()
+    margin-right 3u
