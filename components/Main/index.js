@@ -2,9 +2,9 @@ import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
 import { Div } from '@startupjs/ui'
-import Header from '../Header'
-import Content from '../Content'
-import Footer from '../Footer'
+import Header from 'components/Header'
+import Content from 'components/Content'
+import Footer from 'components/Footer'
 
 export default observer(function Main ({ style }) {
   return pug`
