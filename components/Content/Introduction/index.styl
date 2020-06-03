@@ -1,4 +1,7 @@
 // 1u is a 8px grid unit. 1u === 8px
+$textColor = #636363
+$borderColor = #dddddd
+$colorWhite = #ffffff
 
 .root
   align-items flex-start
@@ -8,7 +11,7 @@
   flex-direction column
   width 100%
   align-items center
-  border-bottom solid 1px #ddd
+  border-bottom solid 1px $borderColor
   text-align center
   +tablet()
     padding 8u 8u 10u 8u
@@ -19,7 +22,7 @@
 
 .h2
   font-size 22px
-  color #636363
+  color $textColor
   font-weight 300
   margin-top 3u
   +tablet()
@@ -31,7 +34,7 @@
 .sep
   width 12u
   margin 2u 0u 4u 0u
-  border solid 1px #dddddd
+  border solid 1px $borderColor
   +tablet()
     margin 4u 0u 4u 0u
   +desktop()
@@ -39,7 +42,7 @@
     width 13u
 
 .text
-  color #636363
+  color $textColor
   font-size 14px
   line-height 30px
   font-weight 300
@@ -63,7 +66,7 @@
 .imageBorder
   align-items center
   justify-content center
-  border solid 1px #ddd
+  border solid 1px $borderColor
   width 27u
   height 27u
   border-radius 50%
@@ -75,7 +78,7 @@
   width 25u
   height 25u
   border-radius 50%
-  border solid 1px #ddd
+  border solid 1px $borderColor
   +tablet()
     width 32u
     height 32u
@@ -87,12 +90,12 @@
     width 20u
 
 .btnText
-  color #636363
+  color $textColor
   font-size 14px
   line-height 3u
   font-weight 300
   padding 1u 5u
-  border solid 1px #ddd
+  border solid 1px $borderColor
   border-radius 1u
   +tablet()
     font-size 14px

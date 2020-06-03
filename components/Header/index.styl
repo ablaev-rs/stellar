@@ -1,4 +1,7 @@
 // 1u is a 8px grid unit. 1u === 8px
+$textColor = #636363 
+$borderColor = #dddddd 
+$colorWhite = #ffffff 
 
 .root
   align-items center
@@ -16,7 +19,7 @@
   height 11u
   
 .h1
-  color #ffffff
+  color $colorWhite 
   font-size 4u
   font-weight 300
   margin-top 4u
@@ -39,7 +42,7 @@
   font-size 14px
   line-height: 3u
   margin-top 0u
-  color #ccc
+  color $borderColor
   font-weight 300
   +tablet()
     font-size 2u
@@ -47,5 +50,5 @@
 
 .link
   text-decoration underline
-  text-decoration-color #ccc
+  text-decoration-color $borderColor
   text-decoration-style dotted

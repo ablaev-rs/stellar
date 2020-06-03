@@ -1,4 +1,7 @@
 // 1u is a 8px grid unit. 1u === 8px
+$textColor = #636363
+$borderColor = #dddddd
+$colorWhite = #ffffff
 
 .container 
   padding 3u 3u 0u 3u
@@ -9,8 +12,8 @@
   align-items center
 
 .h2
-  font-size 22
-  color #636363
+  font-size 22px
+  color $textColor
   font-weight 300
   margin-top 3u
   +tablet()
@@ -19,17 +22,17 @@
 .sep
   width 12u
   margin 2u 0u 4u 0u
-  border solid 1px #dddddd
+  border solid 1px $borderColor 
   +tablet()
     width 17u
 
 .text
-  color #636363
+  color $textColor
   font-size 14px
   line-height 24px
   font-weight 300
   +tablet()
-    color #636363
+    color $textColor
     font-size 2u
     line-height 4u
     font-weight 300
@@ -47,16 +50,16 @@
     width 22u
 
 .btnText
-  color #636363
+  color $textColor
   font-size 14px
   line-height 3u
   font-weight 300
   padding 1u 0u
-  border solid 1px #ddd
+  border solid 1px $borderColor 
   border-radius 1u
 
 .btnBlue
-  color #fff
+  color $colorWhite 
   background #9acff2
   +tablet()
     margin-right 3u
