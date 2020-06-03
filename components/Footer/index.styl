@@ -12,7 +12,6 @@ $colorWhite = #ffffff
   width 100%
   text-align left 
 
-
 .h2
   font-size 3u
   color $colorWhite 
@@ -50,49 +49,21 @@ $colorWhite = #ffffff
   color $colorWhite 
   background #7b5b91
 
-.contact
-  align-items flex-start
-  +tablet()
-    margin 0u
-
-.contactData
-  margin-top 3u
-  flex-direction row
-  align-items flex-start
-
-
-.header,
-.value
-  color $colorWhite 
-  font-size 2u
-  align-items flex-start
-
-.header
-  font-weight bold
-  flex 1
-  width 7u
-  line-height 3u
-  +tablet()
-    width 12u
-
-.value
-  margin-left 4u
-  line-height 3u
-  text-align left
-  +tablet()
-    width 70u
-    margin-left 0u
-  
 .copyright
   margin-top 4u
   margin-bottom 10u
   width 100%
   flex-direction row
+  +desktop()
+    justify-content center
 
 .text
   color $colorWhite 
   font-size 14px
   text-align left
+  +desktop()
+    font-size 2u
+    line-height 4u
 
 .social
   flex-direction row
@@ -123,3 +94,50 @@ $colorWhite = #ffffff
   text-decoration underline
   text-decoration-color $colorWhite 
   text-decoration-style dotted
+
+.footerBox
+  +desktop()
+    flex-direction row
+
+.infoBox
+  +desktop()
+    flex 1
+
+.contact
+  align-items flex-start
+  +tablet()
+    margin 0u
+  +desktop()
+    flex 1
+    margin-left 2u
+
+.contactData
+  margin-top 3u
+  flex-direction row
+  align-items flex-start
+
+.header,
+.value
+  color $colorWhite 
+  font-size 2u
+  align-items flex-start
+
+.header
+  font-weight bold
+  flex 1
+  width 7u
+  line-height 3u
+  +tablet()
+    width 12u
+  +desktop()
+    width 6u
+
+.value
+  margin-left 4u
+  line-height 3u
+  text-align left
+  +tablet()
+    width 70u
+    margin-left 0u
+  +desktop()
+    flex 1

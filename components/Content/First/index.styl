@@ -15,8 +15,8 @@ $borderColor = #dddddd
   +tablet()
     padding 5u 3u 8u 3u
   +desktop()
-    justify-content space-between
-    flex-direction row
+    padding 5u 3u 8u 3u
+
 
 .h2
   font-size 3u
@@ -64,10 +64,17 @@ $borderColor = #dddddd
     flex-direction row
     flex-wrap wrap
     justify-content center
+  +desktop()
+    width 100%
+    justify-content space-between
+    flex-direction row
+    flex-wrap wrap
 
 .item
   +tablet()
     width 38u
+  +desktop()
+    width 34u
 
 .textBox
   margin-top 2u
@@ -93,6 +100,9 @@ $borderColor = #dddddd
   +tablet()
     width 23u
     height 23u
+  +desktop()
+    width 23u
+    height 23u
 
 .image
   width 15u
@@ -103,8 +113,8 @@ $borderColor = #dddddd
     width 20u
     height 20u
   +desktop()
-    width 36u
-    height 36u
+    width 20u
+    height 20u
 
 .btn
   margin-top 4u
@@ -121,5 +131,8 @@ $borderColor = #dddddd
   border solid 1px $borderColor
   border-radius 1u
   +tablet()
+    font-size 14px
+    padding 1u 5u
+  +desktop()
     font-size 14px
     padding 1u 5u

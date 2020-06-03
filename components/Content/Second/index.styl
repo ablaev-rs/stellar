@@ -36,14 +36,22 @@ $colorWhite = #ffffff
   font-size 2u
   line-height 3u
   font-weight 300
-  +tablet()
-    color $textColor
-    font-size 2u
-    line-height 3u
-    font-weight 300
+  +desktop()
+    line-height 4u
+
 
 .justify
   text-align justify
+  +tablet()
+    +web()
+      column-count 2
+  +desktop()
+    +web()
+      column-count 2
+  +wide()
+      +web()
+        column-count 2
+  
   
 .infoBox
   align-items center
@@ -61,6 +69,9 @@ $colorWhite = #ffffff
   +tablet()
     width 5u
     height 5u
+  +desktop()
+    width 7u
+    height 7u
 
 .items
   width 90%
@@ -70,9 +81,17 @@ $colorWhite = #ffffff
     flex-direction row
     flex-wrap nowrap
     justify-content center
+  +desktop()
+    flex-direction row
+    flex-wrap nowrap
+    justify-content center
 
 .item
   padding 4u
+  +desktop()
+    padding 3u 6u
+  +wide()
+    padding 3u 7u
   
 
 .count
