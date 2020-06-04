@@ -5,10 +5,15 @@ $colorWhite = #ffffff
 
 .btn
   width 100%
+  padding 1u 5u
+  border solid 1px $borderColor
+  border-radius 8px
   +tablet()
     width 22u
+    padding 1u 0u
   +desktop()
     width 22u
+    padding 1u 0u
   +wide()
     width 22u
 
@@ -17,16 +22,12 @@ $colorWhite = #ffffff
   font-size 2u
   line-height 3u
   font-weight 300
-  padding 1u 5u
-  border solid 1px $borderColor
-  border-radius 8px
   text-align center
   +tablet()
     font-size 14px
-    padding 1u 0u
   +desktop()
     font-size 14px
-    padding 1u 0u
+    
 
 .btnBlue
   color $colorWhite 
