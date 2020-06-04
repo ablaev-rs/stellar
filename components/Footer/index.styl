@@ -92,32 +92,32 @@ $colorWhite = #ffffff
   flex-direction row
   align-items flex-start
 
-.header,
+.title
+  font-weight bold
+   width 11u
+  line-height 3u
+  +tablet()
+    width 11u
+  +desktop()
+    width 11u
+
+.value
+  line-height 3u
+  text-align left
+  flex 1
+  width 40u
+  max-width 32u
+  +tablet()
+    width 68u
+    max-width 68u
+  +desktop()
+    width 68u
+    max-width 68u
+
+.title,
 .value
   color $colorWhite 
   font-size 2u
-  align-items flex-start
-
-.header
-  font-weight bold
-  flex 1
-  width 7u
-  line-height 3u
-  +tablet()
-    width 12u
-  +desktop()
-    width 6u
-
-.value
-  margin-left 4u
-  line-height 3u
-  text-align left
-  +tablet()
-    width 70u
-    margin-left 0u
-  +desktop()
-    flex 1
-
 
 .btnWrapper
   margin-top 4u
