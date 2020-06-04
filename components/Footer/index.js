@@ -1,7 +1,7 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { View, TouchableOpacity, Text, Image, Linking } from 'react-native'
+import { View, Text, Image, Linking } from 'react-native'
 import { BASE_URL } from '@env'
 import Button from 'components/Button'
 

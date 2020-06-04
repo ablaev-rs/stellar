@@ -10,21 +10,20 @@ export default observer(function Header () {
 
   return pug`
     View.root
-      View.container
-        Image.image(
-          source={uri: base + logoUrl}
-        )
-        Text.h1 Stellar
+      Image.image(
+        source={uri: base + logoUrl}
+      )
+      Text.h1 Stellar
 
-        View.sloganBox
-          View.sloganRow
-            Text.slogan Just another free, fully responsive site template built by
-          View.sloganRow
-            Text(onPress=() => Linking.openURL('#')).slogan.link @ajlkn 
-            Text.slogan for 
-            Text(onPress=() => Linking.openURL('#')).slogan.link HTML5 UP
-            Text.slogan .
-          
+      View.sloganBox
+        View.sloganRow
+          Text.slogan Just another free, fully responsive site template built by
+        View.sloganRow
+          Text(onPress=() => Linking.openURL('#')).slogan.link @ajlkn 
+          Text.slogan for 
+          Text(onPress=() => Linking.openURL('#')).slogan.link HTML5 UP
+          Text.slogan .
+        
 
   `
 })
