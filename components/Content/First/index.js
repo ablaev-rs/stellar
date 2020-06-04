@@ -28,27 +28,25 @@ export default observer(function First () {
 
   return pug`
     View.root
-      View.container
+      View.infoBox
+        Text.h2 Magna veroeros
+        Hr.sep
 
-        View.infoBox
-          Text.h2 Magna veroeros
-          Hr.sep
+      View.items
+        each value in data
+          View.item
+            View.imageBox
+              View.imageBorder
+                Image.image(
+                  source={uri: base + value.image}
+                )
+            View.header
+              Text.h3 #{value.header}
+            View.textBox
+              Text.text #{value.description}
 
-        View.items
-          each value in data
-            View.item
-              View.imageBox
-                View.imageBorder
-                  Image.image(
-                    source={uri: base + value.image}
-                  )
-              View.header
-                Text.h3 #{value.header}
-              View.textBox
-                Text.text #{value.description}
-
-        View.btnWrapper
-          Button(action = 'Learn More')
+      View.btnWrapper
+        Button(action = 'Learn More')
 
   `
 })
