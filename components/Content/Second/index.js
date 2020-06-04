@@ -2,7 +2,6 @@ import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
 import { View, Text, Image } from 'react-native'
-import { Hr } from '@startupjs/ui'
 import { BASE_URL } from '@env'
 import Button from 'components/Button'
 
@@ -40,7 +39,7 @@ export default observer(function Second () {
     View.root
       View.infoBox
         Text.h2 Ipsum consequat
-        Hr.sep
+        View.sep
         Text.text Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
 
       View.items

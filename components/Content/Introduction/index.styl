@@ -21,21 +21,17 @@ $colorWhite = #ffffff
   font-size 3u
   color $textColor
   font-weight 300
-  margin-top 3u
   +tablet()
     font-size 4u
-    margin-top 4u
   +desktop()
     font-size 4u
 
 .sep
   width 12u
-  margin 2u 0u 4u 0u
-  border solid 1px $borderColor
-  +tablet()
-    margin 4u 0u 4u 0u
+  height 2px
+  margin 4u 0px
+  background-color $borderColor
   +desktop()
-    margin 4u 0u 4u 0u
     width 13u
 
 .text
@@ -50,7 +46,10 @@ $colorWhite = #ffffff
     text-align left
   
 .infoBox
+  margin-top 3u
   align-items center
+  +tablet()
+    margin-top 4u
   +desktop()
     align-items flex-start
     flex 1

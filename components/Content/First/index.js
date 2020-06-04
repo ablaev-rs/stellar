@@ -2,7 +2,6 @@ import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
 import { View, Text, Image } from 'react-native'
-import { Hr } from '@startupjs/ui'
 import { BASE_URL } from '@env'
 import Button from 'components/Button'
 
@@ -30,7 +29,7 @@ export default observer(function First () {
     View.root
       View.infoBox
         Text.h2 Magna veroeros
-        Hr.sep
+        View.sep
 
       View.items
         each value in data
