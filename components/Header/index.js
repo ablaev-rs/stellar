@@ -19,9 +19,9 @@ export default observer(function Header () {
         View.sloganRow
           Text.slogan Just another free, fully responsive site template built by
         View.sloganRow
-          Text(onPress=() => Linking.openURL('#')).slogan.link @ajlkn 
+          Text.slogan.link(onPress=() => Linking.openURL('#')) @ajlkn 
           Text.slogan for 
-          Text(onPress=() => Linking.openURL('#')).slogan.link HTML5 UP
+          Text.slogan.link(onPress=() => Linking.openURL('#')) HTML5 UP
           Text.slogan .
         
 

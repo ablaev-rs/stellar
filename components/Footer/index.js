@@ -35,7 +35,7 @@ export default observer(function Header () {
               Text.value (000) 000-0000 x 0000
             View.contactData 
               Text.title Email
-              Text(onPress=() => Linking.openURL('#')).value.link information@untitled.tld
+              Text.value.link(onPress=() => Linking.openURL('#')) information@untitled.tld
 
           View.social
             each url, index in icons
@@ -46,9 +46,9 @@ export default observer(function Header () {
 
       View.copyright
         Text.text © Untitled. Design: 
-        Text(onPress=() => Linking.openURL('#')).text.link HTML5 UP 
+        Text.text.link(onPress=() => Linking.openURL('#')) HTML5 UP 
         Text.text Demo Images: 
-        Text(onPress=() => Linking.openURL('#')).text.link Unsplash.
+        Text.text.link(onPress=() => Linking.openURL('#')) Unsplash.
 
   `
 })
