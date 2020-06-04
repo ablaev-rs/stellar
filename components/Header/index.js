@@ -16,11 +16,9 @@ export default observer(function Header () {
       Text.h1 Stellar
 
       View.sloganBox
-        View.sloganRow
-          Text.slogan Just another free, fully responsive site template built by
-        View.sloganRow
+        Text.slogan Just another free, fully responsive site template built by#{' '}
           Text.slogan.link(onPress=() => Linking.openURL('#')) @ajlkn 
-          Text.slogan for 
+          Text.slogan #{' '}for#{' '} 
           Text.slogan.link(onPress=() => Linking.openURL('#')) HTML5 UP
           Text.slogan .
         

@@ -32,17 +32,14 @@ export default observer(function First () {
         View.sep
 
       View.items
-        each value in data
-          View.item
-            View.imageBox
-              View.imageBorder
-                Image.image(
-                  source={uri: base + value.image}
-                )
-            View.header
-              Text.h3 #{value.header}
-            View.textBox
-              Text.text #{value.description}
+        each value, index in data
+          View.item(key=index styleName=index === 0 ? 'first' : '')
+            View.imageBorder
+              Image.image(
+                source={uri: base + value.image}
+              )
+            Text.h3 #{value.header}
+            Text.text #{value.description}
 
       View.btnWrapper
         Button(action = 'Learn More')

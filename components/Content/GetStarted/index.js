@@ -14,7 +14,7 @@ export default observer(function GetStarted () {
 
       View.groupBtn
         View.btnWrapper
-          Button(action = 'Get Started' addStyle = 'btnBlue')
+          Button(action = 'Get Started' color = 'blue')
         View.btnWrapper
           Button(action = 'Learn More')
 

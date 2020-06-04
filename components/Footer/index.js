@@ -22,10 +22,10 @@ export default observer(function Header () {
           Text.h2 Aliquam sed mauris
           Text.text Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
           View.btnWrapper
-            Button(action = 'Learn More' addStyle = 'btnPink')
+            Button(action = 'Learn More' color = 'pink')
 
         View.contact
-          Text.h2 Etiam feugiat
+          Text.h3 Etiam feugiat
           View.contactBox
             View.contactData 
               Text.title Address
@@ -45,10 +45,10 @@ export default observer(function Header () {
                 )
 
       View.copyright
-        Text.text © Untitled. Design: 
-        Text.text.link(onPress=() => Linking.openURL('#')) HTML5 UP 
-        Text.text Demo Images: 
-        Text.text.link(onPress=() => Linking.openURL('#')) Unsplash.
+        Text.text © Untitled. Design:#{' '}
+          Text.text.link(onPress=() => Linking.openURL('#')) HTML5 UP 
+          Text.text #{' '}Demo Images:#{' '}
+          Text.text.link(onPress=() => Linking.openURL('#')) Unsplash.
 
   `
 })

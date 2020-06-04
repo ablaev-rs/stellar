@@ -4,26 +4,23 @@ $borderColor = #dddddd
 
 .root
   align-items flex-start
-  padding 5u 3u 6u 3u
+  padding 7u 3u 7u 3u
   flex-direction column
   width 100%
   align-items center
   border-bottom solid 1px $borderColor
   text-align center
-  +tablet()
-    padding 5u 3u 8u 3u
-  +desktop()
-    padding 5u 3u 8u 3u
 
+.infoBox
+  align-items center
+  +tablet()
+    flex 1
+    
 .h2
   font-size 3u
   color $textColor 
   font-weight 300
-  margin-top 3u
   +tablet()
-    font-size 4u
-    margin-top 3u
-  +desktop()
     font-size 4u
 
 .h3
@@ -50,12 +47,10 @@ $borderColor = #dddddd
   font-size 2u
   line-height 3u
   font-weight 300
-  +tablet()
-    font-size 2u
-    line-height 3u
-    font-weight 300
+  margin-top 2u
 
 .items
+  margin-top 4u
   +tablet()
     margin-top 14u
     justify-content space-between
@@ -64,43 +59,28 @@ $borderColor = #dddddd
     justify-content center
   +desktop()
     width 100%
-    justify-content space-between
-    flex-direction row
-    flex-wrap wrap
 
 .item
+  align-items center
+  margin-top 4u
+  &.first
+    margin-top 0u
   +tablet()
     width 38u
+    margin-top 4u
+    &.first
+      margin-top 4u
   +desktop()
     width 34u
-
-.textBox
-  margin-top 2u
-
-.infoBox
-  align-items center
-  +tablet()
-    flex 1
-
-.imageBox
-  margin-top 4u
-  align-items center
-  +tablet()
-    margin-left 0u
 
 .imageBorder
   align-items center
   justify-content center
   border solid 1px $borderColor
-  width 17u
-  height 17u
+  padding 1u
   border-radius 136px
   +tablet()
-    width 23u
-    height 23u
-  +desktop()
-    width 23u
-    height 23u
+    margin-left 0u
 
 .image
   width 15u
@@ -108,9 +88,6 @@ $borderColor = #dddddd
   border-radius 120px
   border solid 1px $borderColor
   +tablet()
-    width 20u
-    height 20u
-  +desktop()
     width 20u
     height 20u
 
