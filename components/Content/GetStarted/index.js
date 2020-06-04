@@ -1,8 +1,9 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { View, TouchableOpacity, Text } from 'react-native'
+import { View, Text } from 'react-native'
 import { Hr } from '@startupjs/ui'
+import Button from 'components/Button'
 
 export default observer(function GetStarted () {
   return pug`
@@ -15,10 +16,11 @@ export default observer(function GetStarted () {
           Text.text Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
 
         View.groupBtn
-          TouchableOpacity.btn
-            Text.btnText.btnBlue Get Started
-          TouchableOpacity.btn
-            Text.btnText Learn More
+          View.btnWrapper
+            Button(action = 'Get Started' addStyle = 'btnBlue')
+          View.btnWrapper
+            Button(action = 'Learn More')
+
 
   `
 })

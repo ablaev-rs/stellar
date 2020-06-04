@@ -3,6 +3,7 @@ import { observer } from 'startupjs'
 import './index.styl'
 import { View, TouchableOpacity, Text, Image, Linking } from 'react-native'
 import { BASE_URL } from '@env'
+import Button from 'components/Button'
 
 export default observer(function Header () {
   const base = BASE_URL
@@ -22,8 +23,8 @@ export default observer(function Header () {
           View.infoBox
             Text.h2 Aliquam sed mauris
             Text.text Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
-            TouchableOpacity.btn
-              Text.btnText.btnPink Learn more
+            View.btnWrapper
+              Button(action = 'Learn More' addStyle = 'btnPink')
 
           View.contact
             Text.h2 Etiam feugiat
