@@ -11,12 +11,10 @@ import GetStarted from 'components/Content/GetStarted'
 export default observer(function Content () {
   return pug`
     View.root
-      View.container
-        Navigation
-        Introduction
-        First
-        Second
-        GetStarted
-
+      Navigation
+      Introduction
+      First
+      Second
+      GetStarted
   `
 })
