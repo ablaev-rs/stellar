@@ -12,21 +12,19 @@ export default observer(function Header () {
 
   return pug`
     View.root
-      View.container
+      View.imageBox
+        View.imageBorder
+          Image.image(
+            source={uri: base + introUrl}
+          )
 
-        View.imageBox
-          View.imageBorder
-            Image.image(
-              source={uri: base + introUrl}
-            )
-
-        View.infoBox
-          Text.h2 Ipsum sed adipiscing
-          Hr.sep
-          Text.text Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
-          
-          View.btnWrapper
-            Button(action = 'Learn More')
+      View.infoBox
+        Text.h2 Ipsum sed adipiscing
+        Hr.sep
+        Text.text Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+        
+        View.btnWrapper
+          Button(action = 'Learn More')
 
 
   `
