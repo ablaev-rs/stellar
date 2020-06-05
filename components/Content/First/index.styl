@@ -13,8 +13,6 @@ $borderColor = #dddddd
 
 .infoBox
   align-items center
-  +tablet()
-    flex 1
     
 .h2
   font-size 3u
@@ -51,11 +49,11 @@ $borderColor = #dddddd
 .items
   margin-top 4u
   +tablet()
-    margin-top 14u
     justify-content space-around
     flex-direction row
     flex-wrap wrap
     justify-content center
+    margin-top 0u
   +desktop()
     width 100%
     justify-content space-around
@@ -63,15 +61,15 @@ $borderColor = #dddddd
 .item
   align-items center
   margin-top 4u
-  &.first
-    margin-top 0u
   +tablet()
     width 38u
-    margin-top 4u
     &.first
       margin-top 4u
   +desktop()
     width 34u
+  &.first
+    margin-top 0u
+
 
 .imageBorder
   align-items center

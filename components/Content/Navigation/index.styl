@@ -6,33 +6,35 @@ $colorWhite = #ffffff
   display none
   width 100%
   background #f7f7f7
-  height 10u
+  height 9u
   border-top-left-radius 1u
   border-top-right-radius 1u
-  align-items center
+  flex-direction row
+  justify-content center
   +tablet()
     display flex
-    height 9u
-
-.nav
-  padding 3u
-  +tablet()
     padding 18px
   +desktop()
     padding 20px
-  
+ 
 .item
-  color $textColor
-  padding 1u 3u
+  padding 1u 0u
+  width 17u
   background $colorWhite
-  font-size 2u
   margin-left 3u
   border-radius 8px
+  +tablet()
+    padding 1u 0u
   &.first
     margin-left 0
+
+.text
+  color $textColor
+  text-align center
+  font-size 2u
   +tablet()
     font-size 14px
-    padding 1u 2u
+
 
 
 
