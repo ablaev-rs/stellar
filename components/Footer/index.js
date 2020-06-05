@@ -1,7 +1,7 @@
 import React from 'react'
 import { observer } from 'startupjs'
 import './index.styl'
-import { View, Text, Image, Linking } from 'react-native'
+import { View, Text, Image, Linking, TouchableOpacity } from 'react-native'
 import { BASE_URL } from '@env'
 import Button from 'components/Button'
 
@@ -39,10 +39,11 @@ export default observer(function Header () {
 
           View.social
             each url, index in icons
-              View.imageBorder(styleName=index === 0 ? 'first' : '')
-                Image.image(
-                  source={uri: base + url}
-                )
+              TouchableOpacity.btnSocial(styleName=index === 0 ? 'first' : '')
+                View.imageBorder
+                  Image.image(
+                    source={uri: base + url}
+                  )
 
       View.copyright
         Text.text © Untitled. Design:#{' '}
