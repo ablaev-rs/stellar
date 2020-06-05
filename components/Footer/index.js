@@ -46,10 +46,10 @@ export default observer(function Header () {
                   )
 
       View.copyright
-        Text.text © Untitled. Design:#{' '}
-          Text.text.link(onPress=() => Linking.openURL('#')) HTML5 UP 
-          Text.text #{' '}Demo Images:#{' '}
-          Text.text.link(onPress=() => Linking.openURL('#')) Unsplash.
+        Text.copy © Untitled. Design:#{' '}
+          Text.copy.link(onPress=() => Linking.openURL('#')) HTML5 UP 
+          Text.copy #{' '}Demo Images:#{' '}
+          Text.copy.link(onPress=() => Linking.openURL('#')) Unsplash.
 
   `
 })
