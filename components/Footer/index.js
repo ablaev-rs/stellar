@@ -39,7 +39,7 @@ export default observer(function Header () {
 
           View.social
             each url, index in icons
-              TouchableOpacity.btnSocial(styleName=index === 0 ? 'first' : '')
+              TouchableOpacity.btnSocial(key = index styleName=index === 0 ? 'first' : '')
                 View.imageBorder
                   Image.image(
                     source={uri: base + url}

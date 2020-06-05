@@ -13,8 +13,7 @@ export default observer(function GetStarted () {
         Text.text Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
 
       View.groupBtn
-        View.btnWrapper
-          Button(action = 'Get Started' color = 'blue')
+        Button(action = 'Get Started' color = 'blue')
         View.btnWrapper
           Button(action = 'Learn More')
 

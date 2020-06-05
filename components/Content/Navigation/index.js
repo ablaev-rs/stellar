@@ -9,8 +9,8 @@ export default observer(function Header () {
   return pug`
     View.root
       Menu.nav(variant='horizontal')
-        each val in navigation
-          Menu.item= val
+        each val, index in navigation
+          Menu.item(key = index)= val
       
   `
 })

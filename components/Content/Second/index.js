@@ -45,10 +45,9 @@ export default observer(function Second () {
       View.items
         each value, index in data
           View.item(key=index styleName = value.explanation.toLowerCase())
-            View.imageBox
-              Image.image(
-                source={uri: base + value.image}
-              )
+            Image.image(
+              source={uri: base + value.image}
+            )
             Text.count #{value.count}
             Text.explanation #{value.explanation}
 

@@ -41,24 +41,12 @@ $colorWhite = #ffffff
   text-align justify
   +tablet()
     +web()
-      column-count 2
-  +desktop()
-    +web()
-      column-count 2
-  +wide()
-    +web()
-      column-count 2
-  
+      column-count 2  
   
 .infoBox
   align-items center
   +tablet()
     flex 1
-
-.imageBox
-  align-items center
-  +tablet()
-    margin-left 0u
 
 .image
   width 8u
@@ -71,19 +59,17 @@ $colorWhite = #ffffff
     height 7u
 
 .items
-  width 90%
+  width 100%
+  max-width 340px
   margin 4u 0u
   +tablet()
-    margin-top 26u
-    flex-direction row
-    flex-wrap nowrap
-    justify-content center
-  +desktop()
+    margin-top 24u
     flex-direction row
     flex-wrap nowrap
     justify-content center
 
 .item
+  align-items center
   padding 4u
   +desktop()
     padding 3u 6u
@@ -108,7 +94,6 @@ $colorWhite = #ffffff
   border-top-left-radius 8px
   border-top-right-radius 8px
   +tablet()
-    border-top-left-radius 8px
     border-top-right-radius 0u
     border-bottom-left-radius 8px
 
@@ -127,11 +112,9 @@ $colorWhite = #ffffff
   border-bottom-right-radius 8px
   +tablet()
     border-bottom-left-radius 0u
-    border-bottom-right-radius 8px
     border-top-right-radius 8px
 
 .btnWrapper
   margin-top 4u
   width 100%
-  flex-direction row
-  justify-content center
+  align-items center
