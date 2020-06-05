@@ -8,18 +8,18 @@ $colorWhite = #ffffff
   flex-direction column
   width 100%
 
+.footerBox
+  +desktop()
+    flex-direction row
+
+.infoBox
+  +desktop()
+    flex 1
+
 .h2
   font-size 3u
   color $colorWhite 
   font-weight 300
-
-.h3
-  font-size 3u
-  color $colorWhite 
-  font-weight 300
-  margin-top 3u
-  +desktop()
-    margin-top 0u
 
 .text
   color $colorWhite 
@@ -30,6 +30,50 @@ $colorWhite = #ffffff
   +desktop()
     font-size 2u
     line-height 4u
+
+.btnWrapper
+  margin-top 4u
+  
+.contact
+  align-items flex-start
+  margin-top 3u
+  +desktop()
+    flex 1
+    margin-top 0u
+    padding-left 2u
+
+.h3
+  font-size 3u
+  color $colorWhite 
+  font-weight 300
+
+.contactData
+  margin-top 3u
+  flex-direction row
+
+.title,
+.value
+  color $colorWhite 
+  font-size 2u
+
+.title
+  font-weight bold
+  width 11u
+  line-height 3u
+
+.value
+  line-height 3u
+  flex 1
+  width 40u
+  max-width 32u
+  +tablet()
+    width 68u
+    max-width 68u
+
+.link
+  text-decoration underline
+  text-decoration-color $colorWhite 
+  text-decoration-style dotted
 
 .social
   flex-direction row
@@ -47,56 +91,6 @@ $colorWhite = #ffffff
   width 3u
   height 3u
 
-.btnSocial
-  border-radius 9999px
-  margin-left 2u
-  &.first
-    margin-left 0u
-
-.footerBox
-  +desktop()
-    flex-direction row
-
-.infoBox
-  +desktop()
-    flex 1
-
-.contact
-  align-items flex-start
-  +tablet()
-    margin 0u
-  +desktop()
-    flex 1
-    margin-left 2u
-  +wide()
-    margin-left 3u
-
-.contactData
-  margin-top 3u
-  flex-direction row
-
-.title
-  font-weight bold
-  width 11u
-  line-height 3u
-
-.value
-  line-height 3u
-  flex 1
-  width 40u
-  max-width 32u
-  +tablet()
-    width 68u
-    max-width 68u
-
-.title,
-.value
-  color $colorWhite 
-  font-size 2u
-
-.btnWrapper
-  margin-top 4u
-
 .copyright
   margin-top 2u
   width 100%
@@ -111,7 +105,8 @@ $colorWhite = #ffffff
   font-weight 300
   margin-top 3u
 
-.link
-  text-decoration underline
-  text-decoration-color $colorWhite 
-  text-decoration-style dotted
+.btnSocial
+  border-radius 9999px
+  margin-left 2u
+  &.first
+    margin-left 0u
