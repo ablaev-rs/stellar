@@ -59,13 +59,16 @@ $borderColor = #dddddd
   align-items center
   margin-top 4u
   +tablet()
+    margin-top 0px
     width 38u
-    &.first
-      margin-top 4u
   +desktop()
     width 34u
-  &.first
-    margin-top 0u
+
+  &.last
+    +tablet()
+      margin-top 4u
+
+
 
 
 .imageBorder

@@ -8,7 +8,7 @@ export default observer(function Header () {
   return pug`
     View.root
       each val, index in navigation
-        View.item(key = index)
+        View.item(key = index styleName=index === 0 ? 'first' : '')
           Text.text #{val}
       
   `
