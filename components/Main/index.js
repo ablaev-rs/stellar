@@ -9,8 +9,9 @@ import Footer from 'components/Footer'
 export default observer(function Main ({ style }) {
   return pug`
     View.root(style=style)
-      Header
-      Content
-      Footer
+      View.width
+        Header
+        Content
+        Footer
   `
 })
