@@ -40,7 +40,7 @@ export default observer(function Second () {
       View.infoBox
         Text.h2 Ipsum consequat
         View.sep
-        Text.text Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
+        Text.intro Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
 
       View.items
         each value, index in data

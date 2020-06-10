@@ -11,7 +11,11 @@ $colorWhite = #ffffff
   border-bottom solid 1px $borderColor
   text-align center
   +tablet()
-    padding 7u 4u 7u 4u
+    padding 8u 5u 8u 5u
+  +desktop()
+    padding 9u 8u 9u 8u
+  +wide()
+    padding 12u
 
 .h2
   font-size 3u
@@ -30,14 +34,32 @@ $colorWhite = #ffffff
   +tablet()
     width 17u
 
+.intro
+  max-width 65u
+  color $textColor
+  font-size 2.1u
+  line-height 4u
+  font-weight 300
+  margin-top 4u
+  +desktop()
+    line-height 4u
+    font-size 2.2u
+    max-width 70u
+  +wide()
+    max-width 74u
+    font-size 2.5u
+    
 .text
   color $textColor
-  font-size 2u
+  font-size 1.9u
   line-height 3u
   font-weight 300
   margin-top 4u
   +desktop()
     line-height 4u
+  +wide()
+    font-size 2u
+
 
 
 .justify
