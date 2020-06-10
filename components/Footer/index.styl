@@ -7,6 +7,12 @@ $colorWhite = #ffffff
   padding 4u 2u 7u 2u
   flex-direction column
   width 100%
+  +tablet()
+    padding 9u 7u 7u 7u
+  +desktop()
+    padding 9u 9u 7u 9u
+  +wide()
+    padding 12u 11u 10u 11u
 
 .footerBox
   +desktop()
@@ -30,6 +36,7 @@ $colorWhite = #ffffff
   +desktop()
     font-size 2u
     line-height 4u
+    max-width 95%
 
 .btnWrapper
   margin-top 4u
@@ -47,9 +54,14 @@ $colorWhite = #ffffff
   color $colorWhite 
   font-weight 300
 
+.contactBox
+  margin-top 3u
+
 .contactData
   margin-top 3u
   flex-direction row
+  &.first
+    margin-top 0u
 
 .title,
 .value
@@ -95,6 +107,8 @@ $colorWhite = #ffffff
   flex-direction row
   +desktop()
     justify-content center
+  +wide()
+    margin-top 7u
 
 .copy
   color $colorWhite 

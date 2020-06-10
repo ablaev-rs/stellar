@@ -27,7 +27,7 @@ export default observer(function Header () {
         View.contact
           Text.h3 Etiam feugiat
           View.contactBox
-            View.contactData 
+            View.contactData(styleName='first')
               Text.title Address
               Text.value 1234 Somewhere Road • Nashville, TN 00000 • USA
             View.contactData 
