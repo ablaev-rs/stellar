@@ -34,7 +34,7 @@ $colorWhite = #ffffff
   +tablet()
     width 17u
 
-.intro
+.subtitle
   max-width 65u
   color $textColor
   font-size 2.1u
@@ -49,7 +49,7 @@ $colorWhite = #ffffff
     max-width 74u
     font-size 2.5u
     
-.text
+.description
   color $textColor
   font-size 1.9u
   line-height 3u
@@ -57,10 +57,10 @@ $colorWhite = #ffffff
   margin-top 4u
   +desktop()
     line-height 4u
+    margin-top 6u
   +wide()
     font-size 2u
-
-
+    margin-top 7u
 
 .justify
   text-align justify
@@ -84,11 +84,14 @@ $colorWhite = #ffffff
 .items
   width 100%
   max-width 340px
-  margin 4u 0u
+  margin-top 4u
   +tablet()
     flex-direction row
     flex-wrap nowrap
     justify-content center
+    max-width 100%
+  +desktop()
+    margin-top 6u
 
 .item
   align-items center
@@ -96,7 +99,7 @@ $colorWhite = #ffffff
   +desktop()
     padding 3u 6u
   +wide()
-    padding 3u 7u
+    padding 4u 8u
   
 
 .count
