@@ -4,12 +4,18 @@ $borderColor = #dddddd
 
 .root
   align-items flex-start
-  padding 7u 3u 7u 3u
+  padding 7u 3u
   flex-direction column
   width 100%
   align-items center
   border-bottom solid 1px $borderColor
   text-align center
+  +tablet()
+    padding 8u 8u 10u 8u
+  +desktop()
+    padding 6u 8u 8u 8u
+  +wide()
+    padding 12u 12u 8u 12u
 
 .infoBox
   align-items center
