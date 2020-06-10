@@ -23,7 +23,7 @@ export default observer(function Header () {
         Text.text Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
         
         View.btnWrapper
-          Button(action = 'Learn More')
+          Button(action='Learn More')
 
 
   `

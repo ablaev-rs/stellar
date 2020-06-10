@@ -22,7 +22,7 @@ export default observer(function Header () {
           Text.h2 Aliquam sed mauris
           Text.text Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
           View.btnWrapper
-            Button(action = 'Learn More' color = 'pink')
+            Button(action='Learn More' color='pink')
 
         View.contact
           Text.h3 Etiam feugiat

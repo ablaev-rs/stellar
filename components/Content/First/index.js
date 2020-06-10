@@ -42,7 +42,7 @@ export default observer(function First () {
             Text.text #{value.description}
 
       View.btnWrapper
-        Button(action = 'Learn More')
+        Button(action='Learn More')
 
   `
 })
