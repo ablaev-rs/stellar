@@ -30,12 +30,18 @@ $colorWhite = #ffffff
 
 .text
   color $textColor
-  font-size 2u
+  font-size 1.9u
   line-height 3u
   font-weight 300
   margin-top 4u
   +tablet()
+    font-size 2.2u
     line-height 4u
+    max-width 70u
+  +wide()
+    font-size 2.8u
+    max-width 90u
+    font-weight 100
 
 .groupBtn
   width 100%
