@@ -33,7 +33,11 @@ export default observer(function First () {
 
       View.items
         each value, index in data
-          View.item(key=index styleName=index === data.length-1 ? 'last' : '')
+          View.item(
+            key=index 
+            styleName=index === data.length-1 ? 'last' : '' || index === 0 ? 'first' : ''
+            
+          )
             View.imageBorder
               Image.image(
                 source={uri: base + value.image}
