@@ -1,0 +1,145 @@
+// 1u is a 8px grid unit. 1u === 8px
+$textColor = #636363
+$borderColor = #dddddd
+$colorWhite = #ffffff 
+
+.root
+  padding 7u 3u
+  flex-direction column
+  width 100%
+  align-items center
+  border-bottom solid 1px $borderColor
+  text-align center
+  +tablet()
+    padding 8u 8u 10u 8u
+  +desktop()
+    padding 6u 8u 8u 8u
+  +wide()
+    padding 12u 12u 8u 12u
+
+.h2
+  font-size 3u
+  color $textColor
+  font-weight 300
+  +tablet()
+    font-size 3.6u
+  +wide()
+    font-size 4u
+
+.sep
+  width 12u
+  height 2px
+  margin-top 4u
+  background-color $borderColor
+  +tablet()
+    width 17u
+
+.subtitle
+  max-width 65u
+  color $textColor
+  font-size 2.1u
+  line-height 4u
+  font-weight 300
+  margin-top 4u
+  +desktop()
+    line-height 4u
+    font-size 2.2u
+    max-width 70u
+  +wide()
+    max-width 74u
+    font-size 2.5u
+    
+.description
+  color $textColor
+  font-size 1.9u
+  line-height 3u
+  font-weight 300
+  margin-top 4u
+  +desktop()
+    line-height 4u
+    margin-top 6u
+  +wide()
+    font-size 2u
+    margin-top 7u
+
+.justify
+  text-align justify
+  +tablet()
+    +web()
+      column-count 2  
+  
+.infoBox
+  align-items center
+
+.image
+  width 8u
+  height 8u
+  +tablet()
+    width 5u
+    height 5u
+  +desktop()
+    width 7u
+    height 7u
+
+.items
+  width 100%
+  max-width 340px
+  margin-top 4u
+  +tablet()
+    flex-direction row
+    flex-wrap nowrap
+    justify-content center
+    max-width 100%
+  +desktop()
+    margin-top 6u
+
+.item
+  align-items center
+  padding 4u
+  +desktop()
+    padding 3u 6u
+  +wide()
+    padding 4u 8u
+  
+
+.count
+  font-size 4u
+  color $colorWhite 
+  margin-top 1u
+  +tablet()
+    font-size 3u
+
+.explanation
+  margin-top 1u
+  font-size 2u
+  color $colorWhite 
+
+.etiam
+  background #EFA8B0
+  border-top-left-radius 8px
+  border-top-right-radius 8px
+  +tablet()
+    border-top-right-radius 0u
+    border-bottom-left-radius 8px
+
+.magna
+  background #C79CC8
+
+.tempus
+  background #A89CC8
+
+.aliquam
+  background #9BB2E1
+
+.nullam
+  background #8CC9F0
+  border-bottom-left-radius 8px
+  border-bottom-right-radius 8px
+  +tablet()
+    border-bottom-left-radius 0u
+    border-top-right-radius 8px
+
+.btnWrapper
+  margin-top 4u
+  width 100%
+  align-items center

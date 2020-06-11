@@ -1,0 +1,117 @@
+// 1u is a 8px grid unit. 1u === 8px
+$textColor = #636363
+$borderColor = #dddddd
+
+.root
+  align-items flex-start
+  padding 7u 3u
+  flex-direction column
+  width 100%
+  align-items center
+  border-bottom solid 1px $borderColor
+  text-align center
+  +tablet()
+    padding 8u 8u 10u 8u
+  +desktop()
+    padding 6u 8u 8u 8u
+  +wide()
+    padding 12u 12u 8u 12u
+
+.infoBox
+  align-items center
+    
+.h2
+  font-size 3u
+  color $textColor 
+  font-weight 300
+  +tablet()
+    font-size 3.6u
+  +wide()
+    font-size 4u
+
+.h3
+  font-size 2u
+  color $textColor 
+  font-weight 300
+  margin-top 3u
+  +tablet()
+    margin-top 4u
+  +wide()
+    font-size 2.5u
+
+.sep
+  width 12u
+  height 2px
+  margin-top 4u
+  background-color $borderColor
+  +desktop()
+    width 17u
+
+.text
+  color $textColor 
+  font-size 2u
+  line-height 3u
+  font-weight 300
+  margin-top 2u
+  +tablet()
+    font-size 1.8u
+  +wide()
+    line-height 4u
+
+.items
+  margin-top 4u
+  width 100%
+  +tablet()
+    justify-content space-around
+    flex-direction row
+    flex-wrap wrap
+  +wide()
+    margin-top 6u
+
+.item
+  align-items center
+  margin-top 4u
+  +tablet()
+    margin-top 0px
+    width 38u
+  +desktop()
+    width 34u
+
+  &.first
+    margin-top 0u
+    +tablet()
+      margin-top 0u
+
+  &.last
+    +tablet()
+      margin-top 4u
+    +desktop()
+      margin-top 0u
+
+.imageBorder
+  align-items center
+  justify-content center
+  border solid 1px $borderColor
+  padding 1u
+  border-radius 136px
+  +tablet()
+    margin-left 0u
+  +wide()
+    padding 12px
+
+.image
+  width 15u
+  height 15u
+  border-radius 120px
+  border solid 1px $borderColor
+  +tablet()
+    width 20u
+    height 20u
+  +wide()
+    width 24u
+    height 24u
+
+.btnWrapper
+  margin-top 4u
+  width 100%
+  align-items center

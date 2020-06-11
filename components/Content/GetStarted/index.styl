@@ -1,0 +1,62 @@
+// 1u is a 8px grid unit. 1u === 8px
+$textColor = #636363
+$borderColor = #dddddd
+$colorWhite = #ffffff
+
+.root 
+  padding 7u 3u
+  width 100%
+  text-align center
+  +tablet()
+    padding 8u 3u 10u 3u
+  +desktop()
+    padding 6u 3u 8u 3u
+  +wide()
+    padding 12u 3u 8u 3u
+
+.infoBox
+  align-items center
+
+.h2
+  font-size 3u
+  color $textColor
+  font-weight 300
+  +tablet()
+    font-size 3.6u
+  +wide()
+    font-size 4u
+
+.sep
+  width 12u
+  height 2px
+  margin-top 4u
+  background-color $borderColor
+  +tablet()
+    width 17u
+
+.text
+  color $textColor
+  font-size 1.9u
+  line-height 3u
+  font-weight 300
+  margin-top 4u
+  +tablet()
+    font-size 2.2u
+    line-height 4u
+    max-width 70u
+  +wide()
+    font-size 2.8u
+    max-width 90u
+    font-weight 100
+
+.groupBtn
+  width 100%
+  margin-top 4u
+  +tablet()
+    flex-direction row
+    justify-content center
+
+.btnWrapper
+  margin-top 2u
+  +tablet()
+    margin-top: 0u

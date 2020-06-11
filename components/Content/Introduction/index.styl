@@ -1,0 +1,96 @@
+// 1u is a 8px grid unit. 1u === 8px
+$textColor = #636363
+$borderColor = #dddddd
+$colorWhite = #ffffff
+
+.root
+  padding 7u 3u
+  flex-direction column
+  width 100%
+  align-items center
+  border-bottom solid 1px $borderColor
+  text-align center
+  +tablet()
+    padding 8u 8u 10u 8u
+  +desktop()
+    justify-content space-between
+    flex-direction row-reverse
+    padding 6u 8u 8u 8u
+  +wide()
+    padding 12u 12u 8u 12u
+
+.h2
+  font-size 3u
+  color $textColor
+  font-weight 300
+  +tablet()
+    font-size 3.6u
+  +wide()
+    font-size 4u
+
+.sep
+  width 12u
+  height 2px
+  margin-top 4u
+  background-color $borderColor
+  +desktop()
+    width 13u
+
+.text
+  color $textColor
+  font-size 2u
+  line-height 3u
+  font-weight 300
+  margin-top 4u
+  +desktop()
+    text-align left
+  +wide()
+    line-height 4u
+  
+.infoBox
+  margin-top 3u
+  align-items center
+  +desktop()
+    margin-top 0u
+    align-items flex-start
+    flex 1
+
+.imageBox
+  +desktop()
+    margin-left 8u
+
+
+.imageBorder
+  align-items center
+  justify-content center
+  border solid 1px $borderColor
+  width 27u
+  height 27u
+  border-radius 216px
+  +tablet()
+    width 35u
+    height 35u
+  +wide()
+    width 40u
+    height 40u
+
+.image
+  width 25u
+  height 25u
+  border-radius 200px
+  border solid 1px $borderColor
+  +tablet()
+    width 32u
+    height 32u
+  +wide()
+    width 37u
+    height 37u
+
+.btnWrapper
+  margin-top 4u
+  width 100%
+  align-items center
+  +tablet()
+    align-self center
+  +desktop()
+    align-items flex-start

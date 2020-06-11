@@ -1,0 +1,125 @@
+// 1u is a 8px grid unit. 1u === 8px
+$textColor = #636363 
+$borderColor = #dddddd 
+$colorWhite = #ffffff 
+
+.root
+  padding 5u 2u 7u 2u
+  flex-direction column
+  width 100%
+  +tablet()
+    padding 9u 7u 7u 7u
+  +desktop()
+    padding 9u 9u 7u 9u
+  +wide()
+    padding 12u 11u 10u 11u
+
+.footerBox
+  +desktop()
+    flex-direction row
+
+.infoBox
+  +desktop()
+    flex 1
+
+.h2
+  font-size 2.8u
+  color $colorWhite 
+  font-weight 300
+
+.text
+  color $colorWhite 
+  font-size 2u
+  line-height 3u
+  font-weight 300
+  margin-top 3u
+  +desktop()
+    font-size 2u
+    line-height 4u
+    max-width 95%
+
+.btnWrapper
+  margin-top 4u
+  
+.contact
+  align-items flex-start
+  margin-top 3u
+  +tablet()
+    margin-top 6u
+  +desktop()
+    flex 1
+    margin-top 0u
+    margin-left 2u
+
+.h3
+  font-size 2.8u
+  color $colorWhite 
+  font-weight 300
+
+.contactBox
+  margin-top 3u
+
+.contactData
+  margin-top 3u
+  flex-direction row
+  &.first
+    margin-top 0u
+
+.title,
+.value
+  color $colorWhite 
+  font-size 2u
+
+.title
+  font-weight bold
+  width 11u
+  line-height 3u
+
+.value
+  line-height 3u
+  flex 1
+  max-width 32u
+  +tablet()
+    max-width 68u
+
+.link
+  text-decoration underline
+  text-decoration-color $colorWhite 
+  text-decoration-style dotted
+
+.social
+  flex-direction row
+  margin-top 4u
+  width 100%
+
+.imageBorder
+  align-items center
+  justify-content center
+  border solid 1px $borderColor 
+  padding 1u
+  border-radius 40px
+
+.image
+  width 3u
+  height 3u
+
+.copyright
+  margin-top 5u
+  width 100%
+  flex-direction row
+  +desktop()
+    justify-content center
+  +wide()
+    margin-top 7u
+
+.copy
+  color $colorWhite 
+  font-size 12px
+  line-height 3u
+  font-weight 300
+
+.btnSocial
+  border-radius 9999px
+  margin-left 2u
+  &.first
+    margin-left 0u

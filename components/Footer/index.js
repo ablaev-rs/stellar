@@ -1,0 +1,55 @@
+import React from 'react'
+import { observer } from 'startupjs'
+import './index.styl'
+import { View, Text, Image, Linking, TouchableOpacity } from 'react-native'
+import { BASE_URL } from '@env'
+import Button from 'components/Button'
+
+export default observer(function Header () {
+  const base = BASE_URL
+  const icons = [
+    '/img/twitter.png',
+    '/img/facebook.png',
+    '/img/instagram.png',
+    '/img/whatsapp.png',
+    '/img/youtube.png'
+  ]
+
+  return pug`
+    View.root
+      View.footerBox
+        View.infoBox
+          Text.h2 Aliquam sed mauris
+          Text.text Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
+          View.btnWrapper
+            Button(action='Learn More' color='pink')
+
+        View.contact
+          Text.h3 Etiam feugiat
+          View.contactBox
+            View.contactData(styleName='first')
+              Text.title Address
+              Text.value 1234 Somewhere Road • Nashville, TN 00000 • USA
+            View.contactData 
+              Text.title Phone
+              Text.value (000) 000-0000 x 0000
+            View.contactData 
+              Text.title Email
+              Text.value.link(onPress=() => Linking.openURL('#')) information@untitled.tld
+
+          View.social
+            each url, index in icons
+              TouchableOpacity.btnSocial(key = index styleName=index === 0 ? 'first' : '')
+                View.imageBorder
+                  Image.image(
+                    source={uri: base + url}
+                  )
+
+      View.copyright
+        Text.copy © Untitled. Design:#{' '}
+          Text.copy.link(onPress=() => Linking.openURL('#')) HTML5 UP 
+          Text.copy #{' '}Demo Images:#{' '}
+          Text.copy.link(onPress=() => Linking.openURL('#')) Unsplash.
+
+  `
+})
